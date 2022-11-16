@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form action="/process" method="post">
+            <div class="input">
+                <div class="label">
+                    <label for="name">Name:</label>
+                    <label for="location">Dojo Location</label>
+                    <label for="language">Favorite Languge</label>
+                </div>
+                <div class="values">
+                    <input type="text" name="first_name">
+                    <select name="location" id="">
+                        <option value="n/a">--Select location--</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Tirana">Tirana</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Berlin">Berlin</option>
+                    </select>
+                    <select name="language" id="">
+                        <option value="n/a">--Select Language</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="C++">C++</option>
+                    </select>
+                </div>
+            </div>
+            <div class="comment">
+                <label for="comment">Comment (optional):</label><br>
+                <textarea name="comment" id="" cols="10" rows="3"></textarea>
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

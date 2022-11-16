@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin: auto;
+    width: 500px;
+    border: 1px solid black;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+/* form{
+    display: flex;
+} */
+
+label{
+    display: block;
+    margin: 7px;
+}
+input, select{
+    margin:5px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btn{
+    width: 100px;
+    padding: 5px;
+    margin-left: 80%;
+    margin-top: 10px;
+}
+h1{
+    text-decoration: underline;
+}
